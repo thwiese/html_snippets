@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Thomas Wiese | Snippets | HTML | Parallax</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        html, body {
+            height:100%; width: 100%; margin: 0;
+        }
+        .bg-parallax {
+            height: 100%; width: 100%;
+            background: no-repeat fixed center;
+            background-size: cover;
+        }
+        .bg-transparent {
+            background-color: rgba(100, 100, 100, 0.5)
+        }
+
+        .crossfade-full {
+            height: 100%;
+        }
+        .crossfade-bar {
+            height: 100px;
+        }
+
+        p {
+            padding: 10px;
+            font-size: 80px;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bolder;
+            color: #ddd;
+            text-align: right;
+            margin: 0;
+        }
+
+        .bg-img1 {
+            background-image: url("../assets/img1.jpg");
+        }
+        .bg-img2 {
+            background-image: url("../assets/img2.jpg");
+        }
+        .bg-img3 {
+            background-image: url("../assets/img3.jpg");
+        }
+        .bg-img4 {
+            background-image: url("../assets/img4.jpg");
+        }
+    </style>
+    <script>
+
+    </script>
+</head>
+
+<body>
+
+</body>
+    <div class="bg-parallax bg-img1">
+        <div class="bg-transparent" style="height: 100px">
+            <p>observe</p>
+        </div>
+    </div>
+    <div class="crossfade-full bg-img3">
+        <div class="bg-transparent" style="height: 100px">
+            <p>mediate</p>
+        </div>
+    </div>
+    <div class="bg-parallax bg-img2">
+        <div class="bg-transparent" style="height: 100px">
+            <p>try</p>
+        </div>
+    </div>
+    <div class="crossfade-bar">
+    </div>
+    <div class="bg-parallax bg-img4">
+        <div class="bg-transparent" style="height: 100px">
+            <p>enjoy</p>
+        </div>
+    </div>
+</html>
